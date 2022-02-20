@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Петербургская недвижимость</title>
+    <!-- fonts (google) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <div class="header-search">
+                <img src="./assets/img/svg/search.svg" alt="seach image" class="header-search__img">
+                <input type="text" class="header-search__input" placeholder="Введите ЖК / корпус / № квартиры / № паркинга">
+            </div>
+            <!-- /.header__search -->
+            <div class="header-select">
+                <div class="header-select__header">
+                    <span class="header-select__header_current">Все статусы</span>
+                    <img src="./assets/img/svg/ic_up.svg" alt="arrow img" class="header-select__header_img">
+                </div>
+                <div class="header-select__content">
+                    <label class="header-select__content_label checkbox">
+                        <input type="checkbox" value="booked" class="header-select__content_input" data-select="checkbox">
+                        <span class="checkbox__text">Забронировано</span>
+                    </label>
+                    <label class="header-select__content_label checkbox">
+                        <input type="checkbox" value="sell" class="header-select__content_input" data-select="checkbox">
+                        <span class="checkbox__text">Продано</span> 
+                    </label>
+                    <label class="header-select__content_label checkbox">
+                        <input type="checkbox" value="active" class="header-select__content_input" data-select="checkbox">
+                        <span class="checkbox__text">Активно</span>
+                    </label>
+                </div>
+            </div>
+            <!-- /.header__select -->
+            <button class="btn header__btn">
+                Очистить корзину
+                <img src="./assets/img/svg/close.svg" alt="close image" class="btn_img header__btn_img">
+            </button>
+            <!-- /.btn header__btn -->
+        </header>
+        <!-- /.header -->
+        <section class="tabs">
+            <label class="checkbox tabs__checkbox">
+                <input type="checkbox" value="all" data-select="checkbox" checked>
+                <span class="checkbox__text">Все</span>
+             </label>
+            <button class="btn header__btn tabs_btn">
+                Сохранить
+                <img src="./assets/img/svg/pdf.svg" alt="save image" class="btn_img ">
+            </button>
+            <button class="btn header__btn tabs_btn">
+                Отправить
+                <img src="./assets/img/svg/send.svg" alt="send image" class="btn_img">
+            </button>
+            <button class="btn header__btn tabs_btn">
+                Удалить
+                <img src="./assets/img/svg/trash.svg" alt="delete image" class="btn_img">
+            </button>
+        </section>
+        <!-- /.tabs -->
+        <section class="cards">
+            <div class="card" data-status="active">
+                <label class="checkbox card__checkbox"><input type="checkbox" value="all"><span class="checkbox__text checkbox__text_card"></span> </label>
+                <div class="card-content">
+                    <div class="card-content-sell">
+                        <span class="card-content__price">7 733 300 руб.</span>
+                        <span class="card-content__type">
+                        <img src="./assets/img/svg/apart.svg" alt="apat img">
+                        Квартира
+                    </span>
+                    </div>
+                    <p class="card-content-text">
+                        <span class="card-content-text_name">Чистое Небо, </span> корпус 10, III кв. 2022 г.
+                    </p>
+                    <div class="card-content-apart">
+                        <div class="card-content-apart__leftblock">
+                            <p class="apart_number">кв. 62</p>
+                            <p class="apart_rooms">1 комн. кв.</p>
+                        </div>
+                        <div class="card-content-apart__rightblock">
+                            <p class="apart_square">234.38 м²</p>
+                            <p class="apart_floors">7 этаж</p>
+                        </div>
+                    </div>
+                    <div class="card-content-location">
+                        <p class="apart_location">Лен. область, Всеволожский район, д. Кудрово, ул. Столичная, д. 5, к. 1</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="status status_company">
+                        <span class="status_dot"></span>
+                        <p class="status__text">Уступка от юр. лица</p>
+                    </div>
+                    <div class="card__img"><img src="./assets/img/svg/apartment.png" alt="apart img" class="apart_img"></div>
+                    <p class="date">Добавлено <span class="date_add">21/11/2020</span></p>
+                </div>
+            </div>
+            <div class="card" data-status="active">
+                <label class="checkbox card__checkbox"><input type="checkbox" value="all"><span class="checkbox__text checkbox__text_card"></span> </label>
+                <div class="card-content">
+                    <div class="card-content-sell">
+                        <span class="card-content__price">7 733 300 руб.</span>
+                        <span class="card-content__type">
+                        <img src="./assets/img/svg/apart.svg" alt="apat img">
+                        Квартира
+                    </span>
+                    </div>
+                    <p class="card-content-text">
+                        <span class="card-content-text_name">Зеленый квартал на Пулковских
+                            высотах,  </span> корпус 10, III кв. 2022 г.
+                    </p>
+                    <div class="card-content-apart">
+                        <div class="card-content-apart__leftblock">
+                            <p class="apart_number">кв. 62</p>
+                            <p class="apart_rooms">1 комн. кв.</p>
+                        </div>
+                        <div class="card-content-apart__rightblock">
+                            <p class="apart_square">234.38 м²</p>
+                            <p class="apart_floors">7 этаж</p>
+                        </div>
+                    </div>
+                    <div class="card-content-location">
+                        <p class="apart_location">Комендантский пр., уч. 1 Каменка</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="status status_people">
+                        <span class="status_dot"></span>
+                        <p class="status__text">Уступка от физ. лица</p>
+                    </div>
+                    <div class="card__img"><img src="./assets/img/svg/apartment.png" alt="apart img" class="apart_img"></div>
+                    <p class="date">Добавлено <span class="date_add">21/11/2020</span></p>
+                </div>
+            </div>
+            <div class="card" data-status="booked">
+                <label class="checkbox card__checkbox"><input type="checkbox" value="all"><span class="checkbox__text checkbox__text_card"></span> </label>
+                <div class="card-content">
+                    <div class="card-content-sell">
+                        <span class="card-content__price">800 300 руб.</span>
+                        <span class="card-content__type">
+                        <img src="./assets/img/svg/car.svg" alt="parking img">
+                        Паркинг
+                    </span>
+                    </div>
+                    <p class="card-content-text">
+                        <span class="card-content-text_name">Зеленый квартал на Пулковских
+                            высотах, </span> корпус 10, III кв. 2022 г.
+                    </p>
+                    <div class="card-content-apart">
+                        <div class="card-content-apart__leftblock">
+                            <p class="park_number">№ 7-10-2 (ПИБ №68)</p>
+                        </div>
+                        <div class="card-content-apart__rightblock">
+                            <p class="apart_square">15 м²</p>
+                        </div>
+                    </div>
+                    <div class="card-content-location">
+                        <p class="apart_location">Лен. область, Всеволожский район, д. Кудрово, ул. Столичная, д. 5, к. 1</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="status status_blocked">
+                        <span class="status_dot"></span>
+                        <p class="status__text">Забронировано</p>
+                    </div>
+                    <div class="card__img"><img src="./assets/img/svg/apartment.png" alt="apart img" class="apart_img"></div>
+                    <p class="date">Добавлено <span class="date_add">21/11/2020</span></p>
+                </div>
+            </div>
+            <div class="card" data-status="sold">
+                <label class="checkbox card__checkbox"><input type="checkbox" value="all"><span class="checkbox__text checkbox__text_card"></span> </label>
+                <div class="card-content">
+                    <div class="card-content-sell">
+                        <span class="card-content__price">800 300 руб.</span>
+                        <span class="card-content__type">
+                        <img src="./assets/img/svg/car.svg" alt="parking img">
+                        Паркинг
+                    </span>
+                    </div>
+                    <p class="card-content-text">
+                        <span class="card-content-text_name">Зеленый квартал на Пулковских
+                            высотах, </span> корпус 10, III кв. 2022 г.
+                    </p>
+                    <div class="card-content-apart">
+                        <div class="card-content-apart__leftblock">
+                            <p class="park_number">№ 7-10-2 (ПИБ №68)</p>
+                        </div>
+                        <div class="card-content-apart__rightblock">
+                            <p class="apart_square">15 м²</p>
+                        </div>
+                    </div>
+                    <div class="card-content-location">
+                        <p class="apart_location">Лен. область, Всеволожский район, д. Кудрово, ул. Столичная, д. 5, к. 1</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div class="status status_sell">
+                        <span class="status_dot"></span>
+                        <p class="status__text">Проданно</p>
+                    </div>
+                    <div class="card__img"><img src="./assets/img/svg/apartment.png" alt="apart img" class="apart_img"></div>
+                    <p class="date">Добавлено <span class="date_add">21/11/2020</span></p>
+                </div>
+            </div>
+
+        </section>
+        <!-- /.cards -->
+    </main>
+    <!-- /.main -->
+
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

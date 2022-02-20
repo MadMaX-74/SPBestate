@@ -1,0 +1,28 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    padding: 0px 26px;
+    margin-bottom: 20px;
+    &__checkbox {
+        margin-right: 13px;
+    }
+    &_btn {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 478px) {
+    .tabs {
+        padding: 0;
+        &__checkbox {
+            margin-right: 5px;
+        }
+        &_btn {
+            margin-right: 5px;
+        }
+    }
+}
